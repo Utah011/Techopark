@@ -7,14 +7,23 @@
 //
 
 import UIKit
+import Firebase
 
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        print("Hello world")
+        
     }
-
-
+    
+    func authenUserConfigureView(){
+        if Auth.auth().currentUser == nil{
+            DispatchQueue.main.async {
+                 let nav = UINavigationController(rootViewController: LogInViewController())
+                nav.navigationBar.barStyle = .black
+                self.present(nav, animated: true, completion: nil)
+            }
+        }
+    }
 }
 

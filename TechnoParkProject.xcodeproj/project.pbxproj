@@ -18,7 +18,10 @@
 		E01D98BA240D79D300ED7212 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E01D98B8240D79D300ED7212 /* LaunchScreen.storyboard */; };
 		E01D98C5240D79D300ED7212 /* TechnoParkProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E01D98C4240D79D300ED7212 /* TechnoParkProjectTests.swift */; };
 		E01D98D0240D79D300ED7212 /* TechnoParkProjectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E01D98CF240D79D300ED7212 /* TechnoParkProjectUITests.swift */; };
-		E0DB4FCD2412B73200343CD7 /* ButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0DB4FCC2412B73200343CD7 /* ButtonStyle.swift */; };
+		E069CF64241301D50044978C /* SignupAndLoginButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = E069CF63241301D50044978C /* SignupAndLoginButtonStyle.swift */; };
+		E09106A02412FF2200DC455B /* personalPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E091069F2412FF2200DC455B /* personalPageViewController.swift */; };
+		E09106A22412FFA400DC455B /* styleForTextFields.swift in Sources */ = {isa = PBXBuildFile; fileRef = E09106A12412FFA400DC455B /* styleForTextFields.swift */; };
+		E0DB4FCD2412B73200343CD7 /* EnterButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0DB4FCC2412B73200343CD7 /* EnterButtonStyle.swift */; };
 		E0DB4FCF2412B8CD00343CD7 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0DB4FCE2412B8CD00343CD7 /* SignUpViewController.swift */; };
 		E0DB4FD22412B8ED00343CD7 /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0DB4FD12412B8ED00343CD7 /* LogInViewController.swift */; };
 		E0EA69642412BAA2006B7460 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E0EA69632412BAA2006B7460 /* GoogleService-Info.plist */; };
@@ -77,8 +80,11 @@
 		E01D98CB240D79D300ED7212 /* TechnoParkProjectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TechnoParkProjectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E01D98CF240D79D300ED7212 /* TechnoParkProjectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TechnoParkProjectUITests.swift; sourceTree = "<group>"; };
 		E01D98D1240D79D300ED7212 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E069CF63241301D50044978C /* SignupAndLoginButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupAndLoginButtonStyle.swift; sourceTree = "<group>"; };
+		E091069F2412FF2200DC455B /* personalPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = personalPageViewController.swift; sourceTree = "<group>"; };
+		E09106A12412FFA400DC455B /* styleForTextFields.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = styleForTextFields.swift; sourceTree = "<group>"; };
 		E0D75FD92412C21C000356FF /* GTMSessionFetcher.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = GTMSessionFetcher.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		E0DB4FCC2412B73200343CD7 /* ButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonStyle.swift; sourceTree = "<group>"; };
+		E0DB4FCC2412B73200343CD7 /* EnterButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnterButtonStyle.swift; sourceTree = "<group>"; };
 		E0DB4FCE2412B8CD00343CD7 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		E0DB4FD12412B8ED00343CD7 /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
 		E0EA69632412BAA2006B7460 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -152,8 +158,8 @@
 				E01D98AD240D79D200ED7212 /* AppDelegate.swift */,
 				E01D98AF240D79D200ED7212 /* SceneDelegate.swift */,
 				E01D98B3240D79D200ED7212 /* Main.storyboard */,
+				E09106A32412FFA800DC455B /* style for elements */,
 				E0DB4FD02412B8D400343CD7 /* View Controllers */,
-				E0DB4FCC2412B73200343CD7 /* ButtonStyle.swift */,
 				E01D98B6240D79D300ED7212 /* Assets.xcassets */,
 				E01D98B8240D79D300ED7212 /* LaunchScreen.storyboard */,
 				E01D98BB240D79D300ED7212 /* Info.plist */,
@@ -180,9 +186,20 @@
 			path = TechnoParkProjectUITests;
 			sourceTree = "<group>";
 		};
+		E09106A32412FFA800DC455B /* style for elements */ = {
+			isa = PBXGroup;
+			children = (
+				E09106A12412FFA400DC455B /* styleForTextFields.swift */,
+				E0DB4FCC2412B73200343CD7 /* EnterButtonStyle.swift */,
+				E069CF63241301D50044978C /* SignupAndLoginButtonStyle.swift */,
+			);
+			path = "style for elements";
+			sourceTree = "<group>";
+		};
 		E0DB4FD02412B8D400343CD7 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				E091069F2412FF2200DC455B /* personalPageViewController.swift */,
 				E01D98B1240D79D200ED7212 /* ViewController.swift */,
 				E0DB4FCE2412B8CD00343CD7 /* SignUpViewController.swift */,
 				E0DB4FD12412B8ED00343CD7 /* LogInViewController.swift */,
@@ -445,11 +462,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				E01D98B2240D79D200ED7212 /* ViewController.swift in Sources */,
-				E0DB4FCD2412B73200343CD7 /* ButtonStyle.swift in Sources */,
+				E0DB4FCD2412B73200343CD7 /* EnterButtonStyle.swift in Sources */,
 				E0DB4FD22412B8ED00343CD7 /* LogInViewController.swift in Sources */,
 				E01D98AE240D79D200ED7212 /* AppDelegate.swift in Sources */,
 				E01D98B0240D79D200ED7212 /* SceneDelegate.swift in Sources */,
+				E09106A02412FF2200DC455B /* personalPageViewController.swift in Sources */,
+				E069CF64241301D50044978C /* SignupAndLoginButtonStyle.swift in Sources */,
 				E0DB4FCF2412B8CD00343CD7 /* SignUpViewController.swift in Sources */,
+				E09106A22412FFA400DC455B /* styleForTextFields.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

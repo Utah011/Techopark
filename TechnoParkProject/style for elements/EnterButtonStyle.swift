@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ButtonStyle: UIButton {
+class EnterButtonStyle: UIButton {
 
     var color = UIColor.black
        let touchDownAlpha:CGFloat = 0.3

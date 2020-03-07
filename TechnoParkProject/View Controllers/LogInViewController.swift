@@ -7,24 +7,42 @@
 //
 
 import UIKit
+import Firebase
 
 class LogInViewController: UIViewController {
-
+    
+    @IBOutlet weak var emailTextField: UITextField!
+    //MARK: Variables
+    @IBOutlet weak var passwordTextField: UITextField!
+    @IBOutlet weak var logInButton: UIButton!
+    @IBOutlet weak var logoImageView: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        if traitCollection.userInterfaceStyle == .light{
+            logoImageView.image = UIImage(named: "logoForWhiteTheme")
+        }else{
+            logoImageView.image = UIImage(named: "logoForDarkTheme")
+        }
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    func loginUser(email:String, password:String){
+        Auth.auth().signIn(withEmail: email, password: password) { (result, error) in
+            if let error = error{
+//                print("Login failure", error.localizedDescription)
+                return
+            }
+//            print("Successfully logged in")
+        }
     }
-    */
+    
+    //MARK: Methods
+    @IBAction func logInButtonPushed(_ sender: Any) {
+        guard let email = self.emailTextField.text?.trimmingCharacters(in: .whitespacesAndNewlines) else {return}
+        guard let password = self.passwordTextField.text?.trimmingCharacters(in: .whitespacesAndNewlines) else {return}
+        
+        loginUser(email: email, password: password)
+    }
+    
 
 }
