@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="SxX-IB-a4M">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="aZb-Ce-GL0">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
@@ -7,39 +7,39 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Item 2-->
+        <!--Favourite View Controller-->
         <scene sceneID="8n7-tF-las">
             <objects>
-                <viewController id="eGN-ZI-vaa" sceneMemberID="viewController">
+                <viewController id="eGN-ZI-vaa" customClass="FavouriteViewController" customModule="TechnoParkProject" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="2jR-iu-WJw">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="l4k-92-dZi"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 2" id="GmI-9e-cIy"/>
+                    <tabBarItem key="tabBarItem" title="" image="star.fill" catalog="system" id="GmI-9e-cIy"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xam-vL-NxG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="380" y="986"/>
+            <point key="canvasLocation" x="214" y="986"/>
         </scene>
         <!--Item 3-->
         <scene sceneID="cWy-he-xBb">
             <objects>
-                <viewController id="hB8-Yb-wn8" userLabel="Item 3" sceneMemberID="viewController">
+                <viewController id="hB8-Yb-wn8" userLabel="Item 3" customClass="HistoryViewController" customModule="TechnoParkProject" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="q97-9z-9s3">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="qSv-pW-ZgX"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="CuH-1n-AQv"/>
+                    <tabBarItem key="tabBarItem" title="" image="book.fill" catalog="system" id="CuH-1n-AQv"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Np7-ea-yvd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1355" y="986"/>
+            <point key="canvasLocation" x="1243" y="986"/>
         </scene>
-        <!--Item-->
+        <!--Personal Page View Controller-->
         <scene sceneID="ioU-Is-YhJ">
             <objects>
                 <viewController id="SxX-IB-a4M" customClass="personalPageViewController" customModule="TechnoParkProject" customModuleProvider="target" sceneMemberID="viewController">
@@ -82,11 +82,11 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="EJK-Se-YTn"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="hvS-QG-z3b"/>
+                    <tabBarItem key="tabBarItem" title="" image="person.circle.fill" catalog="system" id="hvS-QG-z3b"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uhK-ie-3QI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2618.840579710145" y="985.71428571428567"/>
+            <point key="canvasLocation" x="3439" y="986"/>
         </scene>
         <!--Log In View Controller-->
         <scene sceneID="YU7-HP-BEo">
@@ -96,55 +96,49 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cIz-Og-EQe" customClass="styleForTextFields" customModule="TechnoParkProject" customModuleProvider="target">
-                                <rect key="frame" x="10" y="401" width="394" height="40"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="40" id="fRy-zm-ybe"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nEF-hw-vyX" customClass="styleForTextFields" customModule="TechnoParkProject" customModuleProvider="target">
-                                <rect key="frame" x="10" y="316" width="394" height="40"/>
+                                <rect key="frame" x="10" y="396" width="394" height="50"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="40" id="KCF-sh-eln"/>
+                                    <constraint firstAttribute="height" constant="50" id="ULE-ah-s43"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wmf-35-utj" customClass="SignupAndLoginButtonStyle" customModule="TechnoParkProject" customModuleProvider="target">
-                                <rect key="frame" x="50" y="541" width="314" height="80"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wmf-35-utj" customClass="SignupAndLoginButtonStyle" customModule="TechnoParkProject" customModuleProvider="target">
+                                <rect key="frame" x="50" y="676" width="314" height="80"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="80" id="1oN-py-6jT"/>
-                                </constraints>
                                 <state key="normal" title="Войти"/>
                                 <connections>
                                     <action selector="logInButtonPushed:" destination="H4j-Q4-Pcc" eventType="touchUpInside" id="F3g-GD-8tS"/>
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="9OW-I6-sgS">
-                                <rect key="frame" x="127" y="96" width="160" height="160"/>
+                                <rect key="frame" x="97" y="106" width="220" height="220"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="160" id="0Zf-PM-zB2"/>
-                                    <constraint firstAttribute="width" constant="160" id="Id9-Ea-ngI"/>
+                                    <constraint firstAttribute="height" constant="220" id="Ut1-G8-Jpn"/>
+                                    <constraint firstAttribute="width" constant="220" id="xaL-PU-stv"/>
                                 </constraints>
                             </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cIz-Og-EQe" customClass="styleForTextFields" customModule="TechnoParkProject" customModuleProvider="target">
+                                <rect key="frame" x="10" y="476" width="394" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="9bf-YE-c24"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="Wmf-35-utj" firstAttribute="top" secondItem="cIz-Og-EQe" secondAttribute="bottom" constant="100" id="10X-5s-1QG"/>
-                            <constraint firstItem="nEF-hw-vyX" firstAttribute="top" secondItem="9OW-I6-sgS" secondAttribute="bottom" constant="60" id="2FR-WC-ryf"/>
-                            <constraint firstItem="sCK-TS-GY4" firstAttribute="trailing" secondItem="cIz-Og-EQe" secondAttribute="trailing" constant="10" id="88F-Cc-sgh"/>
-                            <constraint firstItem="Wmf-35-utj" firstAttribute="leading" secondItem="sCK-TS-GY4" secondAttribute="leading" constant="50" id="9lx-6G-DVY"/>
-                            <constraint firstItem="cIz-Og-EQe" firstAttribute="top" secondItem="nEF-hw-vyX" secondAttribute="bottom" constant="45" id="AxG-qB-b88"/>
-                            <constraint firstItem="sCK-TS-GY4" firstAttribute="trailing" secondItem="Wmf-35-utj" secondAttribute="trailing" constant="50" id="GId-35-3OS"/>
-                            <constraint firstItem="9OW-I6-sgS" firstAttribute="centerX" secondItem="MDC-T2-ySp" secondAttribute="centerX" id="Ild-3M-13b"/>
-                            <constraint firstItem="cIz-Og-EQe" firstAttribute="centerX" secondItem="MDC-T2-ySp" secondAttribute="centerX" id="MsZ-ka-fQT"/>
-                            <constraint firstItem="cIz-Og-EQe" firstAttribute="centerY" secondItem="MDC-T2-ySp" secondAttribute="centerY" id="NRg-Ok-G3R"/>
-                            <constraint firstItem="cIz-Og-EQe" firstAttribute="leading" secondItem="sCK-TS-GY4" secondAttribute="leading" constant="10" id="dEg-4M-PnF"/>
-                            <constraint firstItem="nEF-hw-vyX" firstAttribute="leading" secondItem="sCK-TS-GY4" secondAttribute="leading" constant="10" id="oEK-af-WJZ"/>
-                            <constraint firstItem="sCK-TS-GY4" firstAttribute="trailing" secondItem="nEF-hw-vyX" secondAttribute="trailing" constant="10" id="qSh-C2-3zE"/>
+                            <constraint firstItem="sCK-TS-GY4" firstAttribute="trailing" secondItem="cIz-Og-EQe" secondAttribute="trailing" constant="10" id="AMS-U9-N3S"/>
+                            <constraint firstItem="9OW-I6-sgS" firstAttribute="centerX" secondItem="MDC-T2-ySp" secondAttribute="centerX" id="Bbu-WS-h1f"/>
+                            <constraint firstItem="cIz-Og-EQe" firstAttribute="top" secondItem="nEF-hw-vyX" secondAttribute="bottom" constant="30" id="Dmx-4B-hSZ"/>
+                            <constraint firstItem="nEF-hw-vyX" firstAttribute="centerY" secondItem="MDC-T2-ySp" secondAttribute="centerY" id="Fsp-iN-9KA"/>
+                            <constraint firstItem="nEF-hw-vyX" firstAttribute="top" secondItem="9OW-I6-sgS" secondAttribute="bottom" constant="70" id="OYT-eN-2Yb"/>
+                            <constraint firstItem="sCK-TS-GY4" firstAttribute="trailing" secondItem="nEF-hw-vyX" secondAttribute="trailing" constant="10" id="XaB-lz-3Gb"/>
+                            <constraint firstItem="cIz-Og-EQe" firstAttribute="leading" secondItem="sCK-TS-GY4" secondAttribute="leading" constant="10" id="rju-Ql-3et"/>
+                            <constraint firstItem="nEF-hw-vyX" firstAttribute="leading" secondItem="sCK-TS-GY4" secondAttribute="leading" constant="10" id="sfP-5F-dQC"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="sCK-TS-GY4"/>
                     </view>
@@ -157,7 +151,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vnu-We-eD0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2000.0000000000002" y="1712.9464285714284"/>
+            <point key="canvasLocation" x="2910" y="1713"/>
         </scene>
         <!--Sign Up View Controller-->
         <scene sceneID="MID-O4-V7N">
@@ -265,19 +259,19 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fha-kO-J18" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3181" y="1713"/>
+            <point key="canvasLocation" x="3933" y="1713"/>
         </scene>
-        <!--Item 1-->
+        <!--Main Screen View Controller-->
         <scene sceneID="org-3o-jE5">
             <objects>
-                <viewController id="wu4-sA-Nyb" sceneMemberID="viewController">
+                <viewController id="wu4-sA-Nyb" customClass="MainScreenViewController" customModule="TechnoParkProject" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8YW-tY-VHT">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="r4v-v9-Uy3"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 1" id="YL5-2j-Wx6"/>
+                    <tabBarItem key="tabBarItem" title="" image="house.fill" catalog="system" id="YL5-2j-Wx6"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ClD-nu-emH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -301,7 +295,13 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1wM-9H-9pc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="716" y="242"/>
+            <point key="canvasLocation" x="722" y="256"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="book.fill" catalog="system" width="64" height="50"/>
+        <image name="house.fill" catalog="system" width="64" height="52"/>
+        <image name="person.circle.fill" catalog="system" width="64" height="60"/>
+        <image name="star.fill" catalog="system" width="64" height="58"/>
+    </resources>
 </document>

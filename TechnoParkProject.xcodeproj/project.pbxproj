@@ -19,6 +19,9 @@
 		E01D98C5240D79D300ED7212 /* TechnoParkProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E01D98C4240D79D300ED7212 /* TechnoParkProjectTests.swift */; };
 		E01D98D0240D79D300ED7212 /* TechnoParkProjectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E01D98CF240D79D300ED7212 /* TechnoParkProjectUITests.swift */; };
 		E069CF64241301D50044978C /* SignupAndLoginButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = E069CF63241301D50044978C /* SignupAndLoginButtonStyle.swift */; };
+		E084B5152414342D00FCA66A /* MainScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E084B5142414342D00FCA66A /* MainScreenViewController.swift */; };
+		E084B5172414345100FCA66A /* FavouriteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E084B5162414345100FCA66A /* FavouriteViewController.swift */; };
+		E084B5192414346900FCA66A /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E084B5182414346900FCA66A /* HistoryViewController.swift */; };
 		E09106A02412FF2200DC455B /* personalPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E091069F2412FF2200DC455B /* personalPageViewController.swift */; };
 		E09106A22412FFA400DC455B /* styleForTextFields.swift in Sources */ = {isa = PBXBuildFile; fileRef = E09106A12412FFA400DC455B /* styleForTextFields.swift */; };
 		E0DB4FCD2412B73200343CD7 /* EnterButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0DB4FCC2412B73200343CD7 /* EnterButtonStyle.swift */; };
@@ -81,6 +84,9 @@
 		E01D98CF240D79D300ED7212 /* TechnoParkProjectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TechnoParkProjectUITests.swift; sourceTree = "<group>"; };
 		E01D98D1240D79D300ED7212 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E069CF63241301D50044978C /* SignupAndLoginButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupAndLoginButtonStyle.swift; sourceTree = "<group>"; };
+		E084B5142414342D00FCA66A /* MainScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenViewController.swift; sourceTree = "<group>"; };
+		E084B5162414345100FCA66A /* FavouriteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouriteViewController.swift; sourceTree = "<group>"; };
+		E084B5182414346900FCA66A /* HistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
 		E091069F2412FF2200DC455B /* personalPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = personalPageViewController.swift; sourceTree = "<group>"; };
 		E09106A12412FFA400DC455B /* styleForTextFields.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = styleForTextFields.swift; sourceTree = "<group>"; };
 		E0D75FD92412C21C000356FF /* GTMSessionFetcher.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = GTMSessionFetcher.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -199,6 +205,9 @@
 		E0DB4FD02412B8D400343CD7 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				E084B5182414346900FCA66A /* HistoryViewController.swift */,
+				E084B5162414345100FCA66A /* FavouriteViewController.swift */,
+				E084B5142414342D00FCA66A /* MainScreenViewController.swift */,
 				E091069F2412FF2200DC455B /* personalPageViewController.swift */,
 				E01D98B1240D79D200ED7212 /* ViewController.swift */,
 				E0DB4FCE2412B8CD00343CD7 /* SignUpViewController.swift */,
@@ -463,9 +472,12 @@
 			files = (
 				E01D98B2240D79D200ED7212 /* ViewController.swift in Sources */,
 				E0DB4FCD2412B73200343CD7 /* EnterButtonStyle.swift in Sources */,
+				E084B5172414345100FCA66A /* FavouriteViewController.swift in Sources */,
+				E084B5192414346900FCA66A /* HistoryViewController.swift in Sources */,
 				E0DB4FD22412B8ED00343CD7 /* LogInViewController.swift in Sources */,
 				E01D98AE240D79D200ED7212 /* AppDelegate.swift in Sources */,
 				E01D98B0240D79D200ED7212 /* SceneDelegate.swift in Sources */,
+				E084B5152414342D00FCA66A /* MainScreenViewController.swift in Sources */,
 				E09106A02412FF2200DC455B /* personalPageViewController.swift in Sources */,
 				E069CF64241301D50044978C /* SignupAndLoginButtonStyle.swift in Sources */,
 				E0DB4FCF2412B8CD00343CD7 /* SignUpViewController.swift in Sources */,

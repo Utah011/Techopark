@@ -29,10 +29,8 @@ class LogInViewController: UIViewController {
     func loginUser(email:String, password:String){
         Auth.auth().signIn(withEmail: email, password: password) { (result, error) in
             if let error = error{
-//                print("Login failure", error.localizedDescription)
                 return
             }
-//            print("Successfully logged in")
         }
     }
     
