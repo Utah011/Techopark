@@ -18,6 +18,7 @@
 		E01D98BA240D79D300ED7212 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E01D98B8240D79D300ED7212 /* LaunchScreen.storyboard */; };
 		E01D98C5240D79D300ED7212 /* TechnoParkProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E01D98C4240D79D300ED7212 /* TechnoParkProjectTests.swift */; };
 		E01D98D0240D79D300ED7212 /* TechnoParkProjectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E01D98CF240D79D300ED7212 /* TechnoParkProjectUITests.swift */; };
+		E05B7334241A0DCD0056609D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E05B7333241A0DCD0056609D /* GoogleService-Info.plist */; };
 		E069CF64241301D50044978C /* SignupAndLoginButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = E069CF63241301D50044978C /* SignupAndLoginButtonStyle.swift */; };
 		E084B5152414342D00FCA66A /* MainScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E084B5142414342D00FCA66A /* MainScreenViewController.swift */; };
 		E084B5172414345100FCA66A /* FavouriteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E084B5162414345100FCA66A /* FavouriteViewController.swift */; };
@@ -27,7 +28,6 @@
 		E0DB4FCD2412B73200343CD7 /* EnterButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0DB4FCC2412B73200343CD7 /* EnterButtonStyle.swift */; };
 		E0DB4FCF2412B8CD00343CD7 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0DB4FCE2412B8CD00343CD7 /* SignUpViewController.swift */; };
 		E0DB4FD22412B8ED00343CD7 /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0DB4FD12412B8ED00343CD7 /* LogInViewController.swift */; };
-		E0EA69642412BAA2006B7460 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E0EA69632412BAA2006B7460 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,6 +83,7 @@
 		E01D98CB240D79D300ED7212 /* TechnoParkProjectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TechnoParkProjectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E01D98CF240D79D300ED7212 /* TechnoParkProjectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TechnoParkProjectUITests.swift; sourceTree = "<group>"; };
 		E01D98D1240D79D300ED7212 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E05B7333241A0DCD0056609D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
 		E069CF63241301D50044978C /* SignupAndLoginButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupAndLoginButtonStyle.swift; sourceTree = "<group>"; };
 		E084B5142414342D00FCA66A /* MainScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenViewController.swift; sourceTree = "<group>"; };
 		E084B5162414345100FCA66A /* FavouriteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouriteViewController.swift; sourceTree = "<group>"; };
@@ -93,7 +94,6 @@
 		E0DB4FCC2412B73200343CD7 /* EnterButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnterButtonStyle.swift; sourceTree = "<group>"; };
 		E0DB4FCE2412B8CD00343CD7 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		E0DB4FD12412B8ED00343CD7 /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
-		E0EA69632412BAA2006B7460 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		EA11694178A0EA5861A91D2B /* Pods_TechnoParkProject_TechnoParkProjectUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TechnoParkProject_TechnoParkProjectUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -139,6 +139,7 @@
 		E01D98A1240D79D200ED7212 = {
 			isa = PBXGroup;
 			children = (
+				E05B7333241A0DCD0056609D /* GoogleService-Info.plist */,
 				E01D98AC240D79D200ED7212 /* TechnoParkProject */,
 				E01D98C3240D79D300ED7212 /* TechnoParkProjectTests */,
 				E01D98CE240D79D300ED7212 /* TechnoParkProjectUITests */,
@@ -169,7 +170,6 @@
 				E01D98B6240D79D300ED7212 /* Assets.xcassets */,
 				E01D98B8240D79D300ED7212 /* LaunchScreen.storyboard */,
 				E01D98BB240D79D300ED7212 /* Info.plist */,
-				E0EA69632412BAA2006B7460 /* GoogleService-Info.plist */,
 			);
 			path = TechnoParkProject;
 			sourceTree = "<group>";
@@ -340,7 +340,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E01D98BA240D79D300ED7212 /* LaunchScreen.storyboard in Resources */,
-				E0EA69642412BAA2006B7460 /* GoogleService-Info.plist in Resources */,
+				E05B7334241A0DCD0056609D /* GoogleService-Info.plist in Resources */,
 				E01D98B7240D79D300ED7212 /* Assets.xcassets in Resources */,
 				E01D98B5240D79D200ED7212 /* Main.storyboard in Resources */,
 			);

@@ -16,6 +16,6 @@ class styleForTextFields: UITextField {
         
         self.layer.borderWidth = 2
         self.layer.borderColor = CGColor(srgbRed: 160/255, green: 160/255, blue: 1, alpha: 1)
-        
+        self.borderStyle = .none
     }
 }
